@@ -19,4 +19,9 @@ def on_draw():
     image.blit(150, 20)
     label.draw()
 
+
+@window.event
+def on_key_press(symbol, modifiers):
+    print("A key was pressed: {}".format(symbol))
+
 pyglet.app.run()
